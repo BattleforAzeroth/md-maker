@@ -13,14 +13,16 @@
         <div class="brand-mark">MD</div>
         <p class="eyebrow">PRIVATE WORKSPACE</p>
         <h1>MD Maker</h1>
-        <p class="muted">输入分配给你的密码，进入个人 Markdown 工作区。</p>
+        <p class="muted">输入账号和密码，进入个人 Markdown 工作区。</p>
         <form id="login-form" class="login-form">
-          <label for="password">访问密码</label>
+          <label for="email">账号邮箱</label>
+          <input id="email" name="email" type="email" autocomplete="username" placeholder="例如：user1@example.com" />
+          <label for="password">密码</label>
           <input id="password" name="password" type="password" autocomplete="current-password" placeholder="请输入密码" required />
           <p id="login-error" class="form-error" role="alert"></p>
           <button type="submit" class="primary-button">进入工作区</button>
         </form>
-        <p class="security-note">当前为轻量前端版本：文档保存在本机浏览器中。</p>
+        <p id="storage-note" class="security-note">正在检查云端存储配置……</p>
       </section>
 
       <section id="workspace-view" class="workspace hidden">
@@ -72,6 +74,8 @@
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="./config.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
