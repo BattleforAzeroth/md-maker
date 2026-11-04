@@ -1,10 +1,9 @@
 (function () {
   "use strict";
 
-  // Change these two passwords before sharing the deployed site.
   var USERS = {
-    "maker-one": "mdmaker-2026",
-    "maker-two": "write-md-2026"
+    "maker-one": "chiikawa0321",
+    "maker-two": "hachiware0702"
   };
   var AUTOSAVE_MS = 10000;
   var currentUser = null;
