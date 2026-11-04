@@ -1,0 +1,2 @@
+# Keep the local Supabase configuration out of version control when it contains project values.
+config.local.js
