@@ -1,3 +1,5 @@
-// Supabase is optional until you create a project and add its public API values.
-// Copy config.example.js values here for cloud sync. Never use the service_role key.
-window.MD_MAKER_CONFIG = {};
+// This is the public client key, not the service_role key.
+window.MD_MAKER_CONFIG = {
+  url: "https://gxpwjddgwgknimdjpboq.supabase.co",
+  anonKey: "sb_publishable_MJVX566-yeCliyoMZWJ-FA_Ik5efsN3"
+};
